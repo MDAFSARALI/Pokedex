@@ -59,7 +59,7 @@ function pokemonList(){
      <div className="pokemon-list-wrapper">
         <h2 style={{justifyContent:"center" , textAlign:"center"}}>Pokemon Lists...</h2>
         <div className="pokemon-wrapper">
-            { (isLoading) ? 'Loading....'  :pokemonList.map((p)=><Pokemon name={p.name} image={p.image} key={p.id}/>)}
+            { (isLoading) ? 'Loading....'  :pokemonList.map((p)=><Pokemon name={p.name} image={p.image} key={p.id} id={p.id}/>)}
         </div>
         <div className="controls">
             <button hidden={PrevUrl == null } onClick={()=> setPokedexUrl(PrevUrl)}><FaArrowCircleLeft /> Prev</button>
